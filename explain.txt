@@ -1,0 +1,8 @@
+We implement a new stationary gridline suppression method based on C++ and Opencv, which can better preserve useful information and remove the grindline artifacts. The method is as follows. The input image is first recursively decomposed into several smaller subimages using a multiscale 2D discrete wavelet transform. The decomposition process stops when the gridline signal is found to be greater than a threshold in one or several of these subimages using a gridline detection module. An automatic Gaussian band-stop filter is then applied to the detected subimages to remove the gridline signal. Finally, the restored image is achieved using the corresponding 2D inverse discrete wavelet transform. We demonstrate the effectiveness and feasibility of our method. At the same time, It is proved that the algorithm can not only effectively remove the grindlines artifacts, but also better preserve the details of the images, compared with other method.
+
+
+
+DLL_TEST1£ºcontain the core realization of our way
+MYTESTA:   the framework of Image Process software
+Environment required: opencv3, VS2015.
+If you have any problems, do not hesititate to contact me, 292245062@qq.com
